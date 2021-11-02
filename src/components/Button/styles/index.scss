@@ -1,0 +1,26 @@
+@import "../../../styles/_variables.scss";
+
+.btn {
+  position: relative;
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  font-size: $btn-font-size;
+  padding: $btn-padding-y $btn-padding-x;
+  border: $btn-border-width solid;
+  border-radius: $btn-border-radius;
+  box-shadow: $box-shadow;
+  cursor: pointer;
+  transition: $btn-transition;
+  &.disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: $btn-disabled-opacity;
+    box-shadow: none;
+    > * {
+      pointer-events: none;
+    }
+  }
+  //   &:hover {
+  //     color: $primary;
+  //   }
+}
