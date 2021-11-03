@@ -23,6 +23,20 @@ Default.args = {
   children: "默认按钮",
 };
 
+export const Large = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Large.args = {
+  size: "lg",
+  children: "大按钮",
+};
+
+export const Small = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Small.args = {
+  size: "sm",
+  children: "小按钮",
+};
+
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
@@ -34,6 +48,12 @@ export const Secondary = Template.bind({});
 Secondary.args = {
   btnType: "secondary",
   children: "次要按钮",
+};
+export const LinkBtn = Template.bind({});
+LinkBtn.args = {
+  btnType: "link",
+  children: "链接按钮",
+  href: "www.example.com",
 };
 
 // export const Large = Template.bind({});
